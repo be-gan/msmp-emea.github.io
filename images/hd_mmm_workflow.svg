@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="359pt" height="482pt" viewBox="0.00 0.00 358.56 482.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 478)">
+<title>hd_mmm_workflow</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-478 354.56,-478 354.56,4 -4,4"/>
+<!-- step1 -->
+<g id="node1" class="node">
+<title>step1</title>
+<polygon fill="lightblue" stroke="black" points="290.65,-474 144.06,-474 144.06,-438 290.65,-438 290.65,-474"/>
+<text text-anchor="middle" x="217.35" y="-459" font-family="Helvetica,sans-Serif" font-size="10.00">1) Prepare Hierarchical Data</text>
+<text text-anchor="middle" x="217.35" y="-447" font-family="Helvetica,sans-Serif" font-size="10.00">(Timeseries, Template, Meta)</text>
+</g>
+<!-- step2 -->
+<g id="node2" class="node">
+<title>step2</title>
+<polygon fill="lightblue" stroke="black" points="266.2,-401 168.5,-401 168.5,-365 266.2,-365 266.2,-401"/>
+<text text-anchor="middle" x="217.35" y="-380" font-family="Helvetica,sans-Serif" font-size="10.00">2) Initialize Project</text>
+</g>
+<!-- step1&#45;&gt;step2 -->
+<g id="edge1" class="edge">
+<title>step1-&gt;step2</title>
+<path fill="none" stroke="black" d="M217.35,-437.81C217.35,-430.23 217.35,-421.1 217.35,-412.54"/>
+<polygon fill="black" stroke="black" points="220.85,-412.54 217.35,-402.54 213.85,-412.54 220.85,-412.54"/>
+</g>
+<!-- step3 -->
+<g id="node3" class="node">
+<title>step3</title>
+<polygon fill="lightblue" stroke="black" points="287.61,-328 147.1,-328 147.1,-292 287.61,-292 287.61,-328"/>
+<text text-anchor="middle" x="217.35" y="-313" font-family="Helvetica,sans-Serif" font-size="10.00">3) Adjust Weights Bounds &amp;</text>
+<text text-anchor="middle" x="217.35" y="-301" font-family="Helvetica,sans-Serif" font-size="10.00">Test Penalty Ranges</text>
+</g>
+<!-- step2&#45;&gt;step3 -->
+<g id="edge2" class="edge">
+<title>step2-&gt;step3</title>
+<path fill="none" stroke="black" d="M217.35,-364.81C217.35,-357.23 217.35,-348.1 217.35,-339.54"/>
+<polygon fill="black" stroke="black" points="220.85,-339.54 217.35,-329.54 213.85,-339.54 220.85,-339.54"/>
+</g>
+<!-- step4 -->
+<g id="node4" class="node">
+<title>step4</title>
+<polygon fill="lightblue" stroke="black" points="296.22,-255 138.49,-255 138.49,-219 296.22,-219 296.22,-255"/>
+<text text-anchor="middle" x="217.35" y="-234" font-family="Helvetica,sans-Serif" font-size="10.00">4) Analyze Penalty Test Results</text>
+</g>
+<!-- step3&#45;&gt;step4 -->
+<g id="edge3" class="edge">
+<title>step3-&gt;step4</title>
+<path fill="none" stroke="black" d="M217.35,-291.81C217.35,-284.23 217.35,-275.1 217.35,-266.54"/>
+<polygon fill="black" stroke="black" points="220.85,-266.54 217.35,-256.54 213.85,-266.54 220.85,-266.54"/>
+</g>
+<!-- step4&#45;&gt;step3 -->
+<g id="edge8" class="edge">
+<title>step4-&gt;step3</title>
+<path fill="none" stroke="gray" stroke-dasharray="5,2" d="M225.99,-255.34C227.99,-261.19 229.3,-267.8 228.35,-274 228.01,-276.22 227.56,-278.49 227.02,-280.76"/>
+<polygon fill="gray" stroke="gray" points="223.67,-279.77 224.31,-290.34 230.4,-281.67 223.67,-279.77"/>
+<text text-anchor="middle" x="289.52" y="-269.3" font-family="Times,serif" font-size="14.00" fill="gray">Refine Penalty Range</text>
+</g>
+<!-- step5 -->
+<g id="node5" class="node">
+<title>step5</title>
+<polygon fill="lightblue" stroke="black" points="288.99,-182 145.72,-182 145.72,-146 288.99,-146 288.99,-182"/>
+<text text-anchor="middle" x="217.35" y="-167" font-family="Helvetica,sans-Serif" font-size="10.00">5) Run Weights Optimization</text>
+<text text-anchor="middle" x="217.35" y="-155" font-family="Helvetica,sans-Serif" font-size="10.00">(Final Penalty Value)</text>
+</g>
+<!-- step4&#45;&gt;step5 -->
+<g id="edge4" class="edge">
+<title>step4-&gt;step5</title>
+<path fill="none" stroke="black" d="M217.35,-218.81C217.35,-211.23 217.35,-202.1 217.35,-193.54"/>
+<polygon fill="black" stroke="black" points="220.85,-193.54 217.35,-183.54 213.85,-193.54 220.85,-193.54"/>
+</g>
+<!-- step6 -->
+<g id="node6" class="node">
+<title>step6</title>
+<polygon fill="lightblue" stroke="black" points="285.66,-109 149.04,-109 149.04,-73 285.66,-73 285.66,-109"/>
+<text text-anchor="middle" x="217.35" y="-94" font-family="Helvetica,sans-Serif" font-size="10.00">6) Run Decomposition &amp;</text>
+<text text-anchor="middle" x="217.35" y="-82" font-family="Helvetica,sans-Serif" font-size="10.00">Response Curve Functions</text>
+</g>
+<!-- step5&#45;&gt;step6 -->
+<g id="edge5" class="edge">
+<title>step5-&gt;step6</title>
+<path fill="none" stroke="black" d="M217.35,-145.81C217.35,-138.23 217.35,-129.1 217.35,-120.54"/>
+<polygon fill="black" stroke="black" points="220.85,-120.54 217.35,-110.54 213.85,-120.54 220.85,-120.54"/>
+</g>
+<!-- step7 -->
+<g id="node7" class="node">
+<title>step7</title>
+<polygon fill="lightblue" stroke="black" points="282.05,-36 152.66,-36 152.66,0 282.05,0 282.05,-36"/>
+<text text-anchor="middle" x="217.35" y="-15" font-family="Helvetica,sans-Serif" font-size="10.00">7) Save Outputs &amp; Export</text>
+</g>
+<!-- step6&#45;&gt;step7 -->
+<g id="edge6" class="edge">
+<title>step6-&gt;step7</title>
+<path fill="none" stroke="black" d="M217.35,-72.81C217.35,-65.23 217.35,-56.1 217.35,-47.54"/>
+<polygon fill="black" stroke="black" points="220.85,-47.54 217.35,-37.54 213.85,-47.54 220.85,-47.54"/>
+</g>
+<!-- ingest -->
+<g id="node8" class="node">
+<title>ingest</title>
+<polygon fill="lightyellow" stroke="black" points="132.7,-401 0,-401 0,-365 132.7,-365 132.7,-401"/>
+<text text-anchor="middle" x="66.35" y="-380" font-family="Helvetica,sans-Serif" font-size="10.00">Ingest Base MMM Results</text>
+</g>
+<!-- ingest&#45;&gt;step2 -->
+<g id="edge7" class="edge">
+<title>ingest-&gt;step2</title>
+<path fill="none" stroke="gray" stroke-dasharray="5,2" d="M133,-383C140.99,-383 148.98,-383 156.97,-383"/>
+<polygon fill="gray" stroke="gray" points="156.75,-386.5 166.75,-383 156.75,-379.5 156.75,-386.5"/>
+</g>
+</g>
+</svg>

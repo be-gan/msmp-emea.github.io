@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="262pt" height="352pt" viewBox="0.00 0.00 262.46 351.80">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 347.8)">
+<title>new_ga_workflow</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-347.8 258.46,-347.8 258.46,4 -4,4"/>
+<!-- step1 -->
+<g id="node1" class="node">
+<title>step1</title>
+<polygon fill="lightblue" stroke="black" points="153.15,-343.8 37.66,-343.8 37.66,-307.8 153.15,-307.8 153.15,-343.8"/>
+<text text-anchor="middle" x="95.41" y="-322.8" font-family="Helvetica,sans-Serif" font-size="10.00">Create Input Template</text>
+</g>
+<!-- step2 -->
+<g id="node2" class="node">
+<title>step2</title>
+<polygon fill="lightblue" stroke="black" points="163.71,-270.8 27.1,-270.8 27.1,-234.8 163.71,-234.8 163.71,-270.8"/>
+<text text-anchor="middle" x="95.41" y="-255.8" font-family="Helvetica,sans-Serif" font-size="10.00">Fill in Constraints</text>
+<text text-anchor="middle" x="95.41" y="-243.8" font-family="Helvetica,sans-Serif" font-size="10.00">(variables, scoring, groups)</text>
+</g>
+<!-- step1&#45;&gt;step2 -->
+<g id="edge1" class="edge">
+<title>step1-&gt;step2</title>
+<path fill="none" stroke="black" d="M95.41,-307.61C95.41,-300.03 95.41,-290.9 95.41,-282.34"/>
+<polygon fill="black" stroke="black" points="98.91,-282.34 95.41,-272.34 91.91,-282.34 98.91,-282.34"/>
+</g>
+<!-- step3 -->
+<g id="node3" class="node">
+<title>step3</title>
+<polygon fill="lightblue" stroke="black" points="78.81,-197.8 0,-197.8 0,-161.8 78.81,-161.8 78.81,-197.8"/>
+<text text-anchor="middle" x="39.41" y="-176.8" font-family="Helvetica,sans-Serif" font-size="10.00">Run new_ga()</text>
+</g>
+<!-- step2&#45;&gt;step3 -->
+<g id="edge2" class="edge">
+<title>step2-&gt;step3</title>
+<path fill="none" stroke="black" d="M81.85,-234.61C75.25,-226.24 67.17,-216 59.84,-206.7"/>
+<polygon fill="black" stroke="black" points="62.72,-204.7 53.77,-199.02 57.22,-209.04 62.72,-204.7"/>
+</g>
+<!-- step4 -->
+<g id="node4" class="node">
+<title>step4</title>
+<polygon fill="lightblue" stroke="black" points="118.86,-124.8 33.95,-124.8 33.95,-88.8 118.86,-88.8 118.86,-124.8"/>
+<text text-anchor="middle" x="76.41" y="-103.8" font-family="Helvetica,sans-Serif" font-size="10.00">Review Results</text>
+</g>
+<!-- step3&#45;&gt;step4 -->
+<g id="edge3" class="edge">
+<title>step3-&gt;step4</title>
+<path fill="none" stroke="black" d="M48.36,-161.61C52.54,-153.59 57.62,-143.85 62.3,-134.87"/>
+<polygon fill="black" stroke="black" points="65.31,-136.66 66.83,-126.17 59.11,-133.42 65.31,-136.66"/>
+</g>
+<!-- step4&#45;&gt;step2 -->
+<g id="edge4" class="edge">
+<title>step4-&gt;step2</title>
+<path fill="none" stroke="gray" stroke-dasharray="5,2" d="M80.47,-125.22C82.8,-135.76 85.61,-149.49 87.41,-161.8 90.39,-182.23 92.42,-205.45 93.69,-223.18"/>
+<polygon fill="gray" stroke="gray" points="90.18,-223.23 94.34,-232.97 97.17,-222.76 90.18,-223.23"/>
+<text text-anchor="middle" x="173.01" y="-175.6" font-family="Times,serif" font-size="14.00">Refine Constraints if Needed</text>
+</g>
+<!-- step5 -->
+<g id="node5" class="node">
+<title>step5</title>
+<polygon fill="lightblue" stroke="black" points="141.37,-36 11.44,-36 11.44,0 141.37,0 141.37,-36"/>
+<text text-anchor="middle" x="76.41" y="-21" font-family="Helvetica,sans-Serif" font-size="10.00">Extract Simulation Details</text>
+<text text-anchor="middle" x="76.41" y="-9" font-family="Helvetica,sans-Serif" font-size="10.00">and Create Model Object</text>
+</g>
+<!-- step4&#45;&gt;step5 -->
+<g id="edge5" class="edge">
+<title>step4-&gt;step5</title>
+<path fill="none" stroke="black" d="M76.41,-88.65C76.41,-76.96 76.41,-61.19 76.41,-47.62"/>
+<polygon fill="black" stroke="black" points="79.91,-47.92 76.41,-37.92 72.91,-47.92 79.91,-47.92"/>
+<text text-anchor="middle" x="120.53" y="-58.2" font-family="Times,serif" font-size="14.00">Acceptable Fit?</text>
+</g>
+</g>
+</svg>

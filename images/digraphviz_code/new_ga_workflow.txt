@@ -1,0 +1,18 @@
+digraph new_ga_workflow {
+
+  graph [layout = dot, rankdir = TB]
+
+  node [shape = box, style = filled, fillcolor = lightblue, fontname = Helvetica, fontsize = 10]
+
+  // Nodes
+  step1 [label = "Create Input Template"]
+  step2 [label = "Fill in Constraints\n(variables, scoring, groups)"]
+  step3 [label = "Run new_ga()"]
+  step4 [label = "Review Results"]
+  step5 [label = "Extract Simulation Details\nand Create Model Object"]
+
+  // Flow
+  step1 -> step2 -> step3 -> step4
+  step4 -> step2 [label = "Refine Constraints if Needed", style = dashed, color = gray]
+  step4 -> step5 [label = "Acceptable Fit?", style = solid]
+}
