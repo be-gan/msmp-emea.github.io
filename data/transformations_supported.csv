@@ -1,0 +1,11 @@
+TransformType,Caller,Explanation
+adstockv3,Adstock,Applies a standard adstock transformation to model lagged and decaying media effects.
+adstockv4imp,Adstock with rescaled impressions,"Similar to standard adstock but used for impression data, applying rescaling to account for volume."
+adr,Ad response,"Applies an advertising response function, typically used for modeling non-linear saturation effects."
+lag,Lag,Shifts the variable backward in time to capture delayed effects.
+log,Log,Applies a logarithmic transformation to reduce skew and stabilize variance.
+ma,Moving average,Smooths the variable by averaging over a specified time window to reduce noise.
+abcnew,For diminishing returns,"Applies a functional form tailored for diminishing returns (e.g., sigmoid or Hill-type curves)."
+none,No transformation,Leaves the variable untransformed. Use when no preprocessing is required.
+customt(),Custom transformation,"Applies a user-defined transformation using a formula-like string. For example, customt(""x^2"") squares the input."""
+boxcox,Boxcox,Applies a Box-Cox transformation to stabilize variance and approximate normality.

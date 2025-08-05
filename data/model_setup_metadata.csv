@@ -1,0 +1,19 @@
+Parameter,Explanation,Mandatory_Field
+ModelForm,"Specifies the regression model form. Options include 'lin_lin' (linear), 'log_lin' (log-transformed response), and 'mc_lin' (mean-centered transformed response).",Yes
+Panel,"Indicates whether the model supports panel data structure. Set to 'Y' to ensure compatibility, even for non-panel use cases.",Yes
+Time,"Name of the time-related column in the dataset, typically representing months or weeks.",Yes
+Geo,Not currently in use.,No
+CS,"Defines the main cross-sectional unit used in panel models (e.g., product, market, or vehicle).",Yes
+CS2,Optional second-level cross-sectional identifier (not currently available),No
+BeginDate,Start date for the analysis period. Format should be DD/MM/YYYY.,Yes
+EndDate,End date for the analysis period. Format should be DD/MM/YYYY.,Yes
+numSubModel,Optional. Specifies how many sub-models are linked to the main model.,No
+Submodel_Link1,Name of the parent variable in the main model used to link to the first sub-model.,No
+Submodel_Link2,Name of the parent variable used to link to the second sub-model.,No
+Submodel_Link3,Name of the parent variable used to link to the third sub-model.,No
+subModel1,Name or label of the first child sub-model to be used in hierarchical modeling.,No
+subModel2,Name or label of the second child sub-model to be used in hierarchical modeling.,No
+subModel3,Name or label of the third child sub-model to be used in hierarchical modeling.,No
+SimStart,Start date for the simulation period used in response curve generation. Format: DD/MM/YYYY.,Yes
+SimEnd,End date for the simulation period used in response curve generation. Format: DD/MM/YYYY.,Yes
+Mroi,Increment size used to simulate changes in media investment when generating response curves.,Yes

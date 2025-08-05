@@ -1,0 +1,38 @@
+Column_Name,Explanation,Workflow_Component
+Orig_Variable,Original name of the variable as it appears in the raw dataset,All functions
+Trans_Variable,Name to use for the variable after any transformation,All functions
+AggregateVariable,Indicates a grouping variable for aggregating similar sub-variables,Decomposition
+Variable_Type,"Specifies the type of variable (e.g., Dependent, Trend, Default)",Decomposition
+Include,Binary flag (1/0) indicating if the variable should be included in the model,All functions
+VaryBy,Specifies if the variable coefficient varies by a grouping (only for panel data),Coefficients estimation
+Transform,Whether the variable should be transformed (Y/N) - Keep this as default.,Transformation
+TransformType,"Type of transformation (e.g., adstock, log, lag, saturation)",Transformation
+Lag,Number of periods to lag the variable,Transformation
+Scale,Scaling factor to adjust the variable values,Transformation
+Effective,Ad Response transformation (tbd),Transformation
+Recency,Ad Response transformation (tbd),Transformation
+Decay,Decay rate for adstock or adr (value between 0 and 1; a higher value means faster decay).,Transformation
+Period,Ad Response transformation (tbd),Transformation
+Window,"Size of the moving window (e.g., for rolling averages)",Transformation
+Trim,Currently not in use,Transformation
+Length,Maximum number of time periods over which advertising memory can persist.,Transformation
+Peak,Indicates the peak point in a adstock transformation.,Transformation
+AT_Divisor,Arc-Tangent parameter (rarely used),Transform (for diminising returns)
+NE_Divisor,Negative Exponential parameter (rarely used),Transform (for diminising returns)
+A,Ceiling of ABC curve (keep as 1),Transform (for diminising returns)
+B,Parameter of ABC curve (typically set between 20–80% of the variable’s maximum value.),Transform (for diminising returns)
+C,"Parameter of ABC curve (If c > -1, the function is logarithmic; if c < -1, the function follows an S-shaped curve).",Transform (for diminising returns)
+Max_Grps,Not in use,Transformation
+Prior_Mean,Prior mean for Bayesian estimation,Coefficients estimation
+Prior_SD,Prior standard deviation for Bayesian estimation,Coefficients estimation
+PriorSD_Adj,Adjustment factor for prior standard deviation,Coefficients estimation
+Sign,Not in use,
+Override,Not in use,
+Simulate,Indicates if the variable is used for response curves,Response Curve
+RC_Shape,Defines the shape of the response curve for the variable,Response Curve
+Explore_correlation,Whether to include the variable in correlation diagnostics,EDA
+Explore_transformation,Whether to explore alternate transformations during modeling,EDA
+Spent_Variable,Reference to the spend version of the variable (if separated from exposure),Response Curve
+Cost_per_unit,Unit cost of the media (used in efficiency calculations),Response Curve
+Source,Metadata field indicating where the variable came from,Transformation
+TimeUnit,"Time granularity of the variable (e.g., weekly, monthly)",Transformation

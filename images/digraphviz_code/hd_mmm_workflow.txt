@@ -1,0 +1,41 @@
+digraph hd_mmm_workflow {
+
+  graph [layout = dot, rankdir = TB]
+
+  node [shape = box, style = filled, fontname = Helvetica, fontsize = 10]
+
+  // Main workflow steps (light blue)
+  node [fillcolor = lightblue]
+  step1 [label = "1) Prepare Hierarchical Data\n(Timeseries, Template, Meta)"]
+  step2 [label = "2) Initialize Project"]
+  step3 [label = "3) Adjust Weights Bounds &\nTest Penalty Ranges"]
+  step4 [label = "4) Analyze Penalty Test Results"]
+  step5 [label = "5) Run Weights Optimization\n(Final Penalty Value)"]
+  step6 [label = "6) Run Decomposition &\nResponse Curve Functions"]
+  step7 [label = "7) Save Outputs & Export"]
+
+  // Side node (light yellow)
+  node [fillcolor = lightyellow]
+  ingest [label = "Ingest Base MMM Results"]
+
+  // Align ingest and step2 horizontally
+  { rank = same; ingest; step2 }
+
+  // Main flow
+  step1 -> step2 -> step3 -> step4 -> step5 -> step6 -> step7
+
+  // Side connection
+  ingest -> step2 [style = dashed, color = gray]
+
+  // Optional feedback loop with label tweaks
+  step4 -> step3 [
+    style = dashed,
+    color = gray,
+    constraint = false,
+    minlen = 2,
+    label = "Refine Penalty Range",
+    fontcolor = gray,
+    labeldistance = 2,
+    labelfloat = true
+  ]
+}

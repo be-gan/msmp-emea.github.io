@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="273pt" height="701pt" viewBox="0.00 0.00 272.69 701.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 697)">
+<title>mmm_workflow</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-697 268.69,-697 268.69,4 -4,4"/>
+<!-- step1 -->
+<g id="node1" class="node">
+<title>step1</title>
+<polygon fill="lightblue" stroke="black" points="166.6,-693 78.9,-693 78.9,-657 166.6,-657 166.6,-693"/>
+<text text-anchor="middle" x="122.75" y="-672" font-family="Helvetica,sans-Serif" font-size="10.00">1) Project Setup</text>
+</g>
+<!-- step2 -->
+<g id="node2" class="node">
+<title>step2</title>
+<polygon fill="lightblue" stroke="black" points="178.83,-620 66.66,-620 66.66,-584 178.83,-584 178.83,-620"/>
+<text text-anchor="middle" x="122.75" y="-599" font-family="Helvetica,sans-Serif" font-size="10.00">2) Load &amp; Clean Data</text>
+</g>
+<!-- step1&#45;&gt;step2 -->
+<g id="edge1" class="edge">
+<title>step1-&gt;step2</title>
+<path fill="none" stroke="black" d="M122.75,-656.81C122.75,-649.23 122.75,-640.1 122.75,-631.54"/>
+<polygon fill="black" stroke="black" points="126.25,-631.54 122.75,-621.54 119.25,-631.54 126.25,-631.54"/>
+</g>
+<!-- step3 -->
+<g id="node3" class="node">
+<title>step3</title>
+<polygon fill="lightblue" stroke="black" points="182.44,-547 63.06,-547 63.06,-511 182.44,-511 182.44,-547"/>
+<text text-anchor="middle" x="122.75" y="-526" font-family="Helvetica,sans-Serif" font-size="10.00">3) Create Model Object</text>
+</g>
+<!-- step2&#45;&gt;step3 -->
+<g id="edge2" class="edge">
+<title>step2-&gt;step3</title>
+<path fill="none" stroke="black" d="M122.75,-583.81C122.75,-576.23 122.75,-567.1 122.75,-558.54"/>
+<polygon fill="black" stroke="black" points="126.25,-558.54 122.75,-548.54 119.25,-558.54 126.25,-558.54"/>
+</g>
+<!-- step4 -->
+<g id="node4" class="node">
+<title>step4</title>
+<polygon fill="lightblue" stroke="black" points="197.17,-474 48.32,-474 48.32,-438 197.17,-438 197.17,-474"/>
+<text text-anchor="middle" x="122.75" y="-453" font-family="Helvetica,sans-Serif" font-size="10.00">4) Define Model Configuration</text>
+</g>
+<!-- step3&#45;&gt;step4 -->
+<g id="edge3" class="edge">
+<title>step3-&gt;step4</title>
+<path fill="none" stroke="black" d="M122.75,-510.81C122.75,-503.23 122.75,-494.1 122.75,-485.54"/>
+<polygon fill="black" stroke="black" points="126.25,-485.54 122.75,-475.54 119.25,-485.54 126.25,-485.54"/>
+</g>
+<!-- step5 -->
+<g id="node5" class="node">
+<title>step5</title>
+<polygon fill="lightblue" stroke="black" points="172.71,-401 72.78,-401 72.78,-365 172.71,-365 172.71,-401"/>
+<text text-anchor="middle" x="122.75" y="-380" font-family="Helvetica,sans-Serif" font-size="10.00">5) Select Variables</text>
+</g>
+<!-- step4&#45;&gt;step5 -->
+<g id="edge4" class="edge">
+<title>step4-&gt;step5</title>
+<path fill="none" stroke="black" d="M122.75,-437.81C122.75,-430.23 122.75,-421.1 122.75,-412.54"/>
+<polygon fill="black" stroke="black" points="126.25,-412.54 122.75,-402.54 119.25,-412.54 126.25,-412.54"/>
+</g>
+<!-- step6 -->
+<g id="node6" class="node">
+<title>step6</title>
+<polygon fill="lightblue" stroke="black" points="145.5,-328 0,-328 0,-292 145.5,-292 145.5,-328"/>
+<text text-anchor="middle" x="72.75" y="-307" font-family="Helvetica,sans-Serif" font-size="10.00">6) Transform &amp; Validate Data</text>
+</g>
+<!-- step5&#45;&gt;step6 -->
+<g id="edge5" class="edge">
+<title>step5-&gt;step6</title>
+<path fill="none" stroke="black" d="M110.64,-364.81C104.81,-356.53 97.69,-346.41 91.19,-337.19"/>
+<polygon fill="black" stroke="black" points="94.23,-335.43 85.61,-329.27 88.51,-339.46 94.23,-335.43"/>
+</g>
+<!-- step7 -->
+<g id="node7" class="node">
+<title>step7</title>
+<polygon fill="lightblue" stroke="black" points="137.49,-255 12,-255 12,-219 137.49,-219 137.49,-255"/>
+<text text-anchor="middle" x="74.75" y="-234" font-family="Helvetica,sans-Serif" font-size="10.00">7) Run Model Estimation</text>
+</g>
+<!-- step6&#45;&gt;step7 -->
+<g id="edge6" class="edge">
+<title>step6-&gt;step7</title>
+<path fill="none" stroke="black" d="M73.23,-291.81C73.45,-284.14 73.71,-274.89 73.95,-266.24"/>
+<polygon fill="black" stroke="black" points="77.44,-266.64 74.23,-256.54 70.45,-266.44 77.44,-266.64"/>
+</g>
+<!-- step8 -->
+<g id="node8" class="node">
+<title>step8</title>
+<polygon fill="lightblue" stroke="black" points="144.83,-182 12.67,-182 12.67,-146 144.83,-146 144.83,-182"/>
+<text text-anchor="middle" x="78.75" y="-161" font-family="Helvetica,sans-Serif" font-size="10.00">8) Analyze Decomposition</text>
+</g>
+<!-- step7&#45;&gt;step8 -->
+<g id="edge7" class="edge">
+<title>step7-&gt;step8</title>
+<path fill="none" stroke="black" d="M75.72,-218.81C76.15,-211.14 76.67,-201.89 77.16,-193.24"/>
+<polygon fill="black" stroke="black" points="80.64,-193.72 77.7,-183.54 73.65,-193.33 80.64,-193.72"/>
+</g>
+<!-- step9 -->
+<g id="node9" class="node">
+<title>step9</title>
+<polygon fill="lightblue" stroke="black" points="201.56,-109 49.94,-109 49.94,-73 201.56,-73 201.56,-109"/>
+<text text-anchor="middle" x="125.75" y="-88" font-family="Helvetica,sans-Serif" font-size="10.00">9) Calculate Response Curves</text>
+</g>
+<!-- step8&#45;&gt;step9 -->
+<g id="edge8" class="edge">
+<title>step8-&gt;step9</title>
+<path fill="none" stroke="black" d="M90.13,-145.81C95.55,-137.62 102.17,-127.62 108.22,-118.48"/>
+<polygon fill="black" stroke="black" points="111.04,-120.56 113.64,-110.29 105.2,-116.7 111.04,-120.56"/>
+</g>
+<!-- step9&#45;&gt;step5 -->
+<g id="edge10" class="edge">
+<title>step9-&gt;step5</title>
+<path fill="none" stroke="gray" stroke-dasharray="5,2" d="M146.1,-109.41C159.19,-122.61 173.75,-142.02 173.75,-163 173.75,-311 173.75,-311 173.75,-311 173.75,-328.26 163.68,-344.2 152.49,-356.59"/>
+<polygon fill="gray" stroke="gray" points="150.23,-353.89 145.73,-363.48 155.23,-358.79 150.23,-353.89"/>
+<text text-anchor="middle" x="219.22" y="-232.8" font-family="Times,serif" font-size="14.00">Iterate if needed</text>
+</g>
+<!-- step10 -->
+<g id="node10" class="node">
+<title>step10</title>
+<polygon fill="lightblue" stroke="black" points="192.39,-36 59.11,-36 59.11,0 192.39,0 192.39,-36"/>
+<text text-anchor="middle" x="125.75" y="-15" font-family="Helvetica,sans-Serif" font-size="10.00">10) Save &amp; Export Results</text>
+</g>
+<!-- step9&#45;&gt;step10 -->
+<g id="edge9" class="edge">
+<title>step9-&gt;step10</title>
+<path fill="none" stroke="black" d="M125.75,-72.81C125.75,-65.23 125.75,-56.1 125.75,-47.54"/>
+<polygon fill="black" stroke="black" points="129.25,-47.54 125.75,-37.54 122.25,-47.54 129.25,-47.54"/>
+</g>
+</g>
+</svg>

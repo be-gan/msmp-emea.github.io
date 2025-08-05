@@ -1,0 +1,985 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Comprehensive documentation for package msmp.emea">
+      
+      
+        <meta name="author" content="Annalect EMEA">
+      
+      
+      
+        <link rel="prev" href="../mmm/">
+      
+      
+        <link rel="next" href="../advanced-tools/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+    
+    
+      
+        <title>HD MMM Workflow - msmp.emea Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hd-mmm-workflow" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="msmp.emea Documentation" class="md-header__button md-logo" aria-label="msmp.emea Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            msmp.emea Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              HD MMM Workflow
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="msmp.emea Documentation" class="md-nav__button md-logo" aria-label="msmp.emea Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    msmp.emea Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Project Setup
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../modeling-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Modeling Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mmm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MMM Workflow
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    HD MMM Workflow
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    HD MMM Workflow
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pre-requisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pre-requisites
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#analyzing-hd-outputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Analyzing HD Outputs
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Advanced Tools
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../function-help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Function Specific Help
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../training/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Training Materials
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="hd-mmm-workflow">HD MMM Workflow<a class="headerlink" href="#hd-mmm-workflow" title="Permanent link">&para;</a></h1>
+<p>This document serves as a guide to help users run HD MMM projects using the <code>msmp.emea</code> package. This document and the codebase are maintained by the Annalect EMEA team, feel free to reach out to the team on any questions you have.</p>
+<p>The flowchart below outlines a high level overview of how a HD project will look like.</p>
+<p><img alt="HD Flowchart" src="../images/photo_hd_flowcharts.png" /></p>
+<h2 id="pre-requisites">Pre-requisites<a class="headerlink" href="#pre-requisites" title="Permanent link">&para;</a></h2>
+<p>Before going into the project setup, there are a few pre-requisites that we would like to outline:</p>
+<ol>
+<li>
+<p>Have the latest package version of <code>msmp.emea</code> installed. Link to the repo can be found here: <a href="https://bitbucket.org/omguk-annalect/msmp.emea/src/master/">msmp.emea</a></p>
+</li>
+<li>
+<p>An MMM model. HD is a build on top of MMM so it requires an already established MMM model. Do note that the codebase requires the user to create the MMM models within the <code>msmp.emea</code> environment. If your MMM models are built using another solution, do reach out to a member of the team to discuss the best way forward.</p>
+</li>
+<li>
+<p>Media data splits. Having good data is central to a HD model's success. HD integrates this information by incorporating two additional files on top of the already established MMM model - HD template and HD meta files (See examples below). Both files can be created from the media data using the <code>msmp.emea::process_hd_data()</code> function within the package.</p>
+</li>
+</ol>
+<table align="center">
+<tr><th> Example of a HD template table </th><th style="width: 50px;"></th><th> Example of a HD meta table </th></tr>
+<tr><td>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align:center;">Orig_Variable</th>
+          <th style="text-align:center;">Next_Level_Down</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align:center;">tv_grps</td>
+          <td style="text-align:center;"></td>
+        </tr>
+        <tr>
+          <td style="text-align:center;">tv_tactical_grps</td>
+          <td style="text-align:center;">tv_grps</td>
+        </tr>
+        <tr>
+          <td style="text-align:center;">tv_brand_grps</td>
+          <td style="text-align:center;">tv_grps</td>
+        </tr>
+        <tr>
+          <td style="text-align:center;">tv_tactical_puba_grps</td>
+          <td style="text-align:center;">tv_tactical_grps</td>
+        </tr>
+        <tr>
+          <td style="text-align:center;">tv_tactical_pubb_grps</td>
+          <td style="text-align:center;">tv_tactical_grps</td>
+        </tr>
+        <tr>
+          <td style="text-align:center;">tv_brand_pubb_grps</td>
+          <td style="text-align:center;">tv_brand_grps</td>
+        </tr>
+        <tr>
+          <td style="text-align:center;">tv_brand_pubc_grps</td>
+          <td style="text-align:center;">tv_brand_grps</td>
+        </tr>
+      </tbody>
+    </table>
+
+</td><td>
+</td><td>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align:center;">Orig_Variable</th>
+          <th style="text-align:center;">Group1</th>
+          <th style="text-align:center;">Group2</th>
+          <th style="text-align:center;">Group3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="text-align:center;">tv_tactical_puba_grps</td>
+          <td style="text-align:center;">TV</td>
+          <td style="text-align:center;">Tactical</td>
+          <td style="text-align:center;">PubA</td>
+        </tr>
+        <tr>
+          <td style="text-align:center;">tv_tactical_pubb_grps</td>
+          <td style="text-align:center;">TV</td>
+          <td style="text-align:center;">Tactical</td>
+          <td style="text-align:center;">PubA</td>
+        </tr>
+        <tr>
+          <td style="text-align:center;">tv_brand_pubb_grps</td>
+          <td style="text-align:center;">TV</td>
+          <td style="text-align:center;">Brand</td>
+          <td style="text-align:center;">PubB</td>
+        </tr>
+        <tr>
+          <td style="text-align:center;">tv_brand_pubc_grps</td>
+          <td style="text-align:center;">TV</td>
+          <td style="text-align:center;">Brand</td>
+          <td style="text-align:center;">PubC</td>
+        </tr>
+      </tbody>
+    </table>
+
+</td></tr> </table>
+
+<hr />
+<h2 id="project-setup">Project Setup<a class="headerlink" href="#project-setup" title="Permanent link">&para;</a></h2>
+<p>In this section, we will walk through the setup of a HD model using the RMarkdown template in detail. This guide will cover each step in the Rmd template and explain what it is trying to achieve.</p>
+<ol>
+<li>
+<p>Initial HD project setup</p>
+<ol>
+<li>Intialise the Rmd file<ul>
+<li>With the <code>msmp.emea</code> package installed, you should be able to see a HD MMM RMarkdown template. Initialise this file within your project folder. Save this file in the same location as your MMM model Rmd. You can create a template from RStudio by following the instruction below.</li>
+<li>
+<blockquote>
+<p>File -&gt; New File -&gt; R Markdown... -&gt; From Template -&gt; HD-mmm -&gt; Ok</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Define Yaml Parameters<ul>
+<li>Start by defining Yaml parameters at the top of the file. Ensure all parameters are accurate, particularly <code>mmm_model_id</code>, which must match the corresponding entry in the <code>table_of_model_ids.csv</code></li>
+<li>
+<p><div class="highlight"><pre><span></span><code>---
+title: &quot;Project Title&quot;
+author: &quot;Your name&quot;
+date: &quot;Date&quot;
+params:
+  model_client: &quot;client_name&quot;
+  model_product: &quot;product1&quot;
+  model_region: &quot;country&quot; 
+  model_year: &quot;2023&quot;
+  model_version: &quot;1.0&quot;
+  model_kpi: &quot;my_kpi&quot;
+  model_panel: FALSE
+  mmm_model_id: &quot;Your MMM model ID&quot;
+  hd_model_version: &quot;v_1.0&quot;
+---
+</code></pre></div>
+1.Set Date Ranges</p>
+</li>
+<li>Define the transform and modelling date ranges of your HD model. These date ranges will need to be the same as your MMM model as HD is very sensitive to this.</li>
+<li>For example, you can have a case where your transform start date is a month earlier than your actual model start date to take into account for media adstocks.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>Setting Up and Loading in Data</p>
+<ol>
+<li>
+<p>Run Initialization</p>
+<ul>
+<li>Execute the <code>hd_mmm_init()</code> function to generate the folder structure required for the project.</li>
+<li>Based on the parameters in the Yaml file, it will create a folder called <code>07_hd_mmm</code> at <code>{model_client}_{model_year}/{model_region}_{model_product}_{model_kpi}/{model_version}</code></li>
+</ul>
+</li>
+<li>
+<p>Populate the required files for the project</p>
+<ul>
+<li><strong>HD Variables</strong>: The <code>07_hd_mmm/01_hd_settings/01_input_hd_variables</code> folder will be auto-populated with the Variables.csv file from the MMM model output folder. The user need only check the csv file such that all HD media variables have the labels at "AggregateVariable" column set to "Media" and "Simulate" column set to "Y".</li>
+<li><strong>HD Template</strong>: User will need to copy the hd template csv file into the folder <code>07_hd_mmm/01_hd_settings/02_input_hd_template</code>. </li>
+<li><strong>HD Meta</strong>: User will need to copy the hd meta csv file into the folder <code>07_hd_mmm/01_hd_settings/03_input_meta</code>. </li>
+<li><strong>HD Data</strong> (Optional): If HD level data is already supplied at the MMM stage, there is nothing to do here. Otherwise, user will need to populate the folder <code>07_hd_mmm/01_hd_settings/04_input_hd_data</code> with the relevant csv files.</li>
+</ul>
+</li>
+<li>
+<p>Re-run the initialisation function</p>
+<ul>
+<li>Once the previous step has been completed. Re-run the <code>hd_mmm_init()</code> function.</li>
+<li>If successful, you should be able to see 3 new files in the <code>07_hd_mmm/01_hd_settings</code> folder.<ul>
+<li><code>{mmm_model_id}_HDModObj.RData</code>: A copy of your model object</li>
+<li><code>{mmm_model_id}_HDVariables.csv</code>: HD variables csv file, it contains all the information on variables in the model and any HD level variables</li>
+<li><code>{mmm_model_id}_Meta.csv</code>: HD meta file</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>Setup HD Variables, Meta and Weights file</p>
+<ol>
+<li>
+<p>At this stage, we should already have most of the HD files setup. The crucial step in this chunk is to make sure that the <code>PreWeights</code> for each HD variables are populated correctly. To facilitate this, user should use the <code>update_hd_preweights()</code> function to update the preweights accordingly. For any media variables that cannot be auto-populated by the function, the user can use the <code>vars</code> and <code>preweights</code> argument to populate them manually.</p>
+</li>
+<li>
+<p>The key thing to keep in mind is that all HD media variables should be in the same scale (i.e. all HD variables are impressions metric or all are in clicks metrics or roughly in the same ballpark in terms of representative size) due to the weight optimization algorithm which rescales these variables.</p>
+</li>
+<li>
+<p>If this chunk ran successfully, you should be able to see a new file in the <code>07_hd_mmm/01_hd_settings</code> folder.</p>
+<ul>
+<li><code>{mmm_model_id}_Weights.csv</code>: HD weights file, this file is where user will provide information on the HD weights (This file will open once the chunk runs successfully)</li>
+</ul>
+</li>
+<li>
+<p>Next step for the user will be to update the Weights file</p>
+<ul>
+<li>User will need to update the <code>Lower_Weight</code> and <code>Upper_Weight</code> columns which corresponds to your HD variables. A common initial bounds to use is [0.7,1.3]. (An example is shown below)</li>
+<li>
+<p>Here is a brief explanation of what each column of the file means:</p>
+<ul>
+<li><strong>Group</strong> &amp; <strong>Value</strong>: These column corresponds to the group and group names of all variables from the meta file. <code>Group1</code> corresponds to your MMM level variables whereas the subsequent groups <code>Group2</code>, <code>Group3</code>, etc. corresponds to the HD level groupings.</li>
+<li><strong>Weight</strong>: Weight assigned to the group, bigger number means bigger importance. All weights are initialised to be 1. Weight of 1s for all groups will give you the same results as your MMM model.</li>
+<li><strong>Lower_Weight</strong> &amp; <strong>Upper_Weight</strong>: Lower and upper bound of the weights that you allow the algorithm to explore. You should only set Lower and Upper weights for HD groups, i.e. all <code>Group1</code>, <code>Intercept</code>, <code>Dependent</code>, and <code>Base</code> values should be fixed at 1.</li>
+<li><strong>Uncontrolled_Weight</strong>: You can ignore this column as this will be populated when we run the weights optimization algorithm.</li>
+<li>Example of a weights table:</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Value</th>
+<th>Weight</th>
+<th>Lower_Weight</th>
+<th>Upper_Weight</th>
+<th>Uncontrolled_Weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Group1</td>
+<td>Intercept1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Group1</td>
+<td>Base1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Group1</td>
+<td>Dependent1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Group1</td>
+<td>Display</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Group1</td>
+<td>YouTube</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Group2</td>
+<td>Direct</td>
+<td>1</td>
+<td>0.7</td>
+<td>1.3</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Group2</td>
+<td>Programmatic</td>
+<td>1</td>
+<td>0.7</td>
+<td>1.3</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Group3</td>
+<td>Home</td>
+<td>1</td>
+<td>0.7</td>
+<td>1.3</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Group3</td>
+<td>Technology</td>
+<td>1</td>
+<td>0.7</td>
+<td>1.3</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Group3</td>
+<td>Fashion</td>
+<td>1</td>
+<td>0.7</td>
+<td>1.3</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>Update the weights file and run a series of pre-transformation checks</p>
+<ol>
+<li>In this chunk, the functions will run a series of checks on the HD spec and control files (meta and weights file) to detect any errors or flag any warnings.</li>
+</ol>
+</li>
+<li>
+<p>Run Checks and Create Variable Transformations + Weightings for HD MMM</p>
+<ol>
+<li>At this stage we are almost done with the HD setups and will be able to run the optimization algorithm soon. One last step that we need to do is to check whether we are able to recreate the MMM model outputs from our HD setup. This is an important step as it gives us confidence that we have set HD up for success.</li>
+<li>Let's go through some of the key functions in this chunk:<ul>
+<li><code>HD_Variable_Tranformations()</code>: HD version of Transform()</li>
+<li><code>Distribute_Weights()</code>: Apply weights from the weights file to the HD variables. At this stage all weights should be 1 (Unless the user has provided a different set of weights to initalise HD)</li>
+<li><code>Measures_of_Extreme_Transformations()</code>: Gives information on how shape of the adstocks and diminishing returns transformations. An example is shown below
+<table>
+    <tr>
+        <td align="center">
+            <img alt="Extremity Adstock" src="../images/photo_hd_extreme_ads.png" />
+            <br>
+            Example for adstock extremity.
+        </td>
+        <td align="center">
+            <img alt="Extremity DR" src="../images/photo_hd_extreme_dr.png" />
+            Example for DR extremity.
+        </td>
+    </tr>
+</table></li>
+<li><code>hd_update_priors()</code>: Updates the priors of the model as the HD variables are in a different scale from the MMM model</li>
+<li><code>Decomposition_Levels()</code>: HD version of Decomp()</li>
+</ul>
+</li>
+<li>This chunk should run fine without needing any edits to the code. Once the chunk runs, it should create two comparison tables - a decomposition table comparison and a coefficients table comparison.<ul>
+<li>Decompoistion table comparison: This is what is important. We should see minimal differences between the two decomps.</li>
+<li>Coefficient table comparison: We can see that the HD model's coefficients for media variables look different from their MMM counterpart. This is because of the scaling that is applied to those variables which will be important in the optimization algorithm.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p>Weights Optimization
+    There are two stages when it comes to optimization of HD weights. First, the algorithm will search for the best possible weights within the bounds specified. After that, a fine tuning algorithm will be run to penalize weights that are not contributing significantly. The idea behind penalizing weights is similar to that of a Lasso or Ridge regression. Similar to how a penalized coefficient will be pulled towards 0, in this case, a penalized weight will be pulled back towards 1. We have broken down this stage into 3 sections: (1) Establishing a rough range the optimal penalty might sit in, (2) Do a grid search of the penalty range, (3) Run the optimization algorithm with the optimal penalty value</p>
+<ol>
+<li>
+<p>Uncontrolled weights and penalty range</p>
+<ul>
+<li>In this chunk, we are looking to understand the range of penalty values that we should test for the model. When we run the optimization algorithm with <code>UCOpt</code> set to TRUE, we can see a suggested penalty range printed in the console.</li>
+</ul>
+<div class="highlight"><pre><span></span><code>Set the penalty for optimization somewhere between 65.2 and 2693.4 for this data.
+  With a penalty of 271.9 preventing only the worst over-fitting but has very high R-Squared.
+  A penalty of 753.8 a good average amount of control.
+  And a penalty of 936.5 allows only the most statistically significant weights. 
+</code></pre></div>
+<ul>
+<li>Besides that, the uncontrolled weights will also give us an idea of whether the bounds we set for our groups are sufficient. For example, if the uncontrolled weight of a group goes beyond its upper or lower bound, it is advised to widen the bound.</li>
+</ul>
+</li>
+<li>
+<p>Testing penalty values</p>
+<ul>
+<li>Once we have the initial penalty values that we can be testing, we can input them into the <code>penalty_vals</code> vector and run the chunk to test out these values. The chunk willl take a while to run, and once finished, it will create a folder called <code>hd_penalty_loop_outputs</code> in the main folder and output the results in an excel file. We will talk more about analysing this output in the next section.</li>
+<li>This is an iterative process, which means we will need to run this chunk multiple times until we find a good penalty value that works well with the model. For example, I have tested penalty values [10, 20, 50, 75, 100] and have found that 20 seems to be giving me the most optimal result. Next, I will test the penalty values [15, 18, 21, 25, 30] to determine which values in the vicinity of 20 gives me a better result. As you can see, it can take quite a few tries to get to our final penalty value.</li>
+<li>Do note that optimal penalty value may vary from one group to another, so it is important to balance this as we can only have one penalty value in the end.</li>
+</ul>
+</li>
+<li>
+<p>Run optimization with optimal penalty value</p>
+<ul>
+<li>After testing all the penalty values and have found the one that is suitable for our model, input that value into the weights optimization function to create our final output.</li>
+<li>With this, we should have everything we need - Final HD Weights, HD Decomp table, and HD Response Curves. All that we need to do now is save the output.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
+<hr />
+<h2 id="analyzing-hd-outputs">Analyzing HD Outputs<a class="headerlink" href="#analyzing-hd-outputs" title="Permanent link">&para;</a></h2>
+<p>This section aims to breakdown the excel file output generated from the penalties testing stage. In the file, you will see 4 sheets:</p>
+<ol>
+<li>
+<p><strong>RanWeights</strong></p>
+<ul>
+<li>As you can see, this sheet resembles the weights file quite a bit, with a few additional columns. It displays the random weights that we get from the optimization algorithm. If you recall, the optimization algorithm runs in two stages, it first gets the best weight in the range, then it refines the weights using the penalty value. Random weights are the weights we get from the first stage of the optimization (best weights in the range). Therefore, these weights are optimized <strong>without</strong> the use of penalty values. You can think of these weights as weights we get from a penalty of 0.</li>
+<li>Purpose: To understand whether the algorithm is giving us consistent results across each run. This is very important as it tells us that the algorithm has converged. However, when we see inconsistencies between runs, the user have to dive into why this is the case. There are a few explanation as to why the weights may not have converged:<ul>
+<li>Size of the group is too small (inidicated by the size column). When the size is too small, the choice of giving it a weight close to the upper bound or the lower bound yields insignificant change to the model. In this case, user can choose not to weight them at all (set lower and upper bounds to 1).</li>
+<li>Run time is too short. When the search range is large or there are many groups in a level, the search space is big and the algorithm hasn't had the chance to explore a good chunk of the parameter space. In this case, it will be wise to increase the run time.</li>
+<li>In cases where the groups are very big and relationship between groups are complex. It is sufficient to observe whether the weights are telling a consistent story, e.g. Group X in Level 2 consistently outperforms the other groups in the same level although it takes on different values in each run.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Weights</strong></p>
+<ul>
+<li>This sheet is very similar to the <strong>RanWeights</strong> sheet, with a slight difference whereby instead of random weights, these weights are the fine tuned version of random weights (weights we get from the second stage of the optimization algorithm). Therefore, these weights are heavily influenced by the penalty values.</li>
+<li>Purpose: Look for consistencies across different runs <strong>within</strong> the same penalty value. Choosing the best penalty value will be up to the analyst's judgement. However, do keep in mind that the weights should be reasonable and tell us a meaningful story. (e.g., A set of weights of 1s as our output isn't telling us anything new as these are the default results we get from our MMM model)</li>
+</ul>
+</li>
+<li>
+<p><strong>Effect</strong></p>
+<ul>
+<li>You can think of effect as a value showing how significant the group is at increasing the model's performance when it's weight is increased/ decreased by a small step in either direction. The bigger the value, the more significant the group is.</li>
+</ul>
+</li>
+<li>
+<p><strong>Decomp</strong></p>
+<ul>
+<li>As looking at the decomposition table is an important factor while deciding on penalty values, its corresponding decomp table of each weights optimization run is saved here so the user can always refer to it when needed.</li>
+</ul>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["toc.integrate", "content.code.copy"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
+      
+    
+  </body>
+</html>

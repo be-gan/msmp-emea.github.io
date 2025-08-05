@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="602pt" height="260pt" viewBox="0.00 0.00 602.14 260.00">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 256)">
+<title>folder_structure</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-256 598.14,-256 598.14,4 -4,4"/>
+<!-- client -->
+<g id="node1" class="node">
+<title>client</title>
+<polygon fill="lightgrey" stroke="black" points="335.12,-252 332.12,-256 311.12,-256 308.12,-252 276.88,-252 276.88,-216 335.12,-216 335.12,-252"/>
+<text text-anchor="middle" x="306" y="-231" font-family="Helvetica,sans-Serif" font-size="10.00">my_client</text>
+</g>
+<!-- region1 -->
+<g id="node2" class="node">
+<title>region1</title>
+<polygon fill="lightgrey" stroke="black" points="247.73,-180 244.73,-184 223.73,-184 220.73,-180 192.27,-180 192.27,-144 247.73,-144 247.73,-180"/>
+<text text-anchor="middle" x="220" y="-159" font-family="Helvetica,sans-Serif" font-size="10.00">uk_sales</text>
+</g>
+<!-- client&#45;&gt;region1 -->
+<g id="edge1" class="edge">
+<title>client-&gt;region1</title>
+<path fill="none" stroke="black" d="M284.74,-215.7C274.3,-207.2 261.54,-196.81 250.12,-187.51"/>
+<polygon fill="black" stroke="black" points="252.45,-184.9 242.49,-181.3 248.03,-190.33 252.45,-184.9"/>
+</g>
+<!-- region2 -->
+<g id="node3" class="node">
+<title>region2</title>
+<polygon fill="lightgrey" stroke="black" points="346.24,-180 343.24,-184 322.24,-184 319.24,-180 265.76,-180 265.76,-144 346.24,-144 346.24,-180"/>
+<text text-anchor="middle" x="306" y="-159" font-family="Helvetica,sans-Serif" font-size="10.00">uk_awareness</text>
+</g>
+<!-- client&#45;&gt;region2 -->
+<g id="edge2" class="edge">
+<title>client-&gt;region2</title>
+<path fill="none" stroke="black" d="M306,-215.7C306,-208.41 306,-199.73 306,-191.54"/>
+<polygon fill="black" stroke="black" points="309.5,-191.62 306,-181.62 302.5,-191.62 309.5,-191.62"/>
+</g>
+<!-- region3 -->
+<g id="node4" class="node">
+<title>region3</title>
+<polygon fill="lightgrey" stroke="black" points="419.73,-180 416.73,-184 395.73,-184 392.73,-180 364.27,-180 364.27,-144 419.73,-144 419.73,-180"/>
+<text text-anchor="middle" x="392" y="-159" font-family="Helvetica,sans-Serif" font-size="10.00">us_sales</text>
+</g>
+<!-- client&#45;&gt;region3 -->
+<g id="edge3" class="edge">
+<title>client-&gt;region3</title>
+<path fill="none" stroke="black" d="M327.26,-215.7C337.7,-207.2 350.46,-196.81 361.88,-187.51"/>
+<polygon fill="black" stroke="black" points="363.97,-190.33 369.51,-181.3 359.55,-184.9 363.97,-190.33"/>
+</g>
+<!-- v1 -->
+<g id="node5" class="node">
+<title>v1</title>
+<polygon fill="lightgrey" stroke="black" points="211,-108 208,-112 187,-112 184,-108 157,-108 157,-72 211,-72 211,-108"/>
+<text text-anchor="middle" x="184" y="-87" font-family="Helvetica,sans-Serif" font-size="10.00">v_1.0</text>
+</g>
+<!-- region1&#45;&gt;v1 -->
+<g id="edge4" class="edge">
+<title>region1-&gt;v1</title>
+<path fill="none" stroke="black" d="M211.1,-143.7C207.13,-135.98 202.37,-126.71 197.94,-118.11"/>
+<polygon fill="black" stroke="black" points="201.17,-116.74 193.49,-109.45 194.95,-119.94 201.17,-116.74"/>
+</g>
+<!-- v1_4 -->
+<g id="node6" class="node">
+<title>v1_4</title>
+<polygon fill="lightgrey" stroke="black" points="283,-108 280,-112 259,-112 256,-108 229,-108 229,-72 283,-72 283,-108"/>
+<text text-anchor="middle" x="256" y="-87" font-family="Helvetica,sans-Serif" font-size="10.00">v_1.4</text>
+</g>
+<!-- region1&#45;&gt;v1_4 -->
+<g id="edge5" class="edge">
+<title>region1-&gt;v1_4</title>
+<path fill="none" stroke="black" d="M228.9,-143.7C232.87,-135.98 237.63,-126.71 242.06,-118.11"/>
+<polygon fill="black" stroke="black" points="245.05,-119.94 246.51,-109.45 238.83,-116.74 245.05,-119.94"/>
+</g>
+<!-- sub01 -->
+<g id="node7" class="node">
+<title>sub01</title>
+<polygon fill="lightgrey" stroke="black" points="54,-36 51,-40 30,-40 27,-36 0,-36 0,0 54,0 54,-36"/>
+<text text-anchor="middle" x="27" y="-15" font-family="Helvetica,sans-Serif" font-size="10.00">01_data</text>
+</g>
+<!-- v1_4&#45;&gt;sub01 -->
+<g id="edge6" class="edge">
+<title>v1_4-&gt;sub01</title>
+<path fill="none" stroke="black" d="M228.74,-75.38C225.82,-74.15 222.87,-72.99 220,-72 155.65,-49.72 132.88,-58.44 65.07,-36.28"/>
+<polygon fill="black" stroke="black" points="66.29,-33 55.7,-33.11 64.04,-39.63 66.29,-33"/>
+</g>
+<!-- sub02 -->
+<g id="node8" class="node">
+<title>sub02</title>
+<polygon fill="lightgrey" stroke="black" points="126,-36 123,-40 102,-40 99,-36 72,-36 72,0 126,0 126,-36"/>
+<text text-anchor="middle" x="99" y="-15" font-family="Helvetica,sans-Serif" font-size="10.00">02_eda</text>
+</g>
+<!-- v1_4&#45;&gt;sub02 -->
+<g id="edge7" class="edge">
+<title>v1_4-&gt;sub02</title>
+<path fill="none" stroke="black" d="M228.54,-75.89C225.66,-74.56 222.78,-73.24 220,-72 185.48,-56.55 174.19,-53.24 136.61,-36.63"/>
+<polygon fill="black" stroke="black" points="138.41,-33.6 127.85,-32.73 135.56,-39.99 138.41,-33.6"/>
+</g>
+<!-- sub03 -->
+<g id="node9" class="node">
+<title>sub03</title>
+<polygon fill="lightgrey" stroke="black" points="248.19,-36 245.19,-40 224.19,-40 221.19,-36 143.81,-36 143.81,0 248.19,0 248.19,-36"/>
+<text text-anchor="middle" x="196" y="-15" font-family="Helvetica,sans-Serif" font-size="10.00">03_model_workflow</text>
+</g>
+<!-- v1_4&#45;&gt;sub03 -->
+<g id="edge8" class="edge">
+<title>v1_4-&gt;sub03</title>
+<path fill="none" stroke="black" d="M241.17,-71.7C234.19,-63.56 225.73,-53.69 218.03,-44.7"/>
+<polygon fill="black" stroke="black" points="220.81,-42.57 211.65,-37.25 215.5,-47.12 220.81,-42.57"/>
+</g>
+<!-- sub04 -->
+<g id="node10" class="node">
+<title>sub04</title>
+<polygon fill="lightgrey" stroke="black" points="365.97,-36 362.97,-40 341.97,-40 338.97,-36 266.03,-36 266.03,0 365.97,0 365.97,-36"/>
+<text text-anchor="middle" x="316" y="-15" font-family="Helvetica,sans-Serif" font-size="10.00">04_model_settings</text>
+</g>
+<!-- v1_4&#45;&gt;sub04 -->
+<g id="edge9" class="edge">
+<title>v1_4-&gt;sub04</title>
+<path fill="none" stroke="black" d="M270.83,-71.7C277.81,-63.56 286.27,-53.69 293.97,-44.7"/>
+<polygon fill="black" stroke="black" points="296.5,-47.12 300.35,-37.25 291.19,-42.57 296.5,-47.12"/>
+</g>
+<!-- sub05 -->
+<g id="node11" class="node">
+<title>sub05</title>
+<polygon fill="lightgrey" stroke="black" points="477.64,-36 474.64,-40 453.64,-40 450.64,-36 384.36,-36 384.36,0 477.64,0 477.64,-36"/>
+<text text-anchor="middle" x="431" y="-15" font-family="Helvetica,sans-Serif" font-size="10.00">05_model_output</text>
+</g>
+<!-- v1_4&#45;&gt;sub05 -->
+<g id="edge10" class="edge">
+<title>v1_4-&gt;sub05</title>
+<path fill="none" stroke="black" d="M283.34,-78.06C308.28,-68.09 345.85,-53.06 376.86,-40.66"/>
+<polygon fill="black" stroke="black" points="378.13,-43.92 386.11,-36.96 375.53,-37.42 378.13,-43.92"/>
+</g>
+<!-- sub06 -->
+<g id="node12" class="node">
+<title>sub06</title>
+<polygon fill="lightgrey" stroke="black" points="594.14,-36 591.14,-40 570.14,-40 567.14,-36 495.86,-36 495.86,0 594.14,0 594.14,-36"/>
+<text text-anchor="middle" x="545" y="-15" font-family="Helvetica,sans-Serif" font-size="10.00">06_documentation</text>
+</g>
+<!-- v1_4&#45;&gt;sub06 -->
+<g id="edge11" class="edge">
+<title>v1_4-&gt;sub06</title>
+<path fill="none" stroke="black" d="M283.16,-83.32C324.51,-74.55 405.99,-56.81 484.35,-36.62"/>
+<polygon fill="black" stroke="black" points="485.12,-40.04 493.92,-34.14 483.36,-33.26 485.12,-40.04"/>
+</g>
+</g>
+</svg>
